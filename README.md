@@ -183,7 +183,11 @@ GROUP BY c.company_name
 
 ```SQL
 
-
+SELECT c.company_name, COUNT(o.customer_id) order_count
+FROM orders o JOIN customers c
+ON o.customers_id = c.customer_id
+GROUP BY c.contact_name
+ORDER BY order_count DESC
 
 ```
 
@@ -196,7 +200,10 @@ GROUP BY c.company_name
 
 ```SQL
 
-
+SELECT c.city, COUNT(o.customer_id) order_count
+FROM orders o JOIN customers c
+GROUP BY c.city
+ORDER BY city
 
 ```
 
