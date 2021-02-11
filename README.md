@@ -224,53 +224,39 @@ Below are some empty tables to be used to normalize the database
 * Not all of the cells will contain data in the final solution
 * Feel free to edit these tables as necessary
 
-Table Name:
+Table Name: Owners
 
-|            |            |            |            |            |            |            |            |            |
+|owner_id     |owner_name   |            |            |            |            |            |            |            |
 |------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
+|1           |Jane        |            |            |            |            |            |            |            |
+|2           |Bob         |            |            |            |            |            |            |            |
+|3           |Sam         |            |            |            |            |            |            |            |
 |            |            |            |            |            |            |            |            |            |
 
-Table Name:
 
-|            |            |            |            |            |            |            |            |            |
+Table Name: Pets
+
+|pet_id      |owner_id    |pet_name    |pet_type    |            |            |            |            |            |
 |------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
+|1           |1           |Ellie       |dog         |            |            |            |            |            |
+|2           |1           |Tiger       |Cat         |            |            |            |            |            |
+|3           |2           |Joe         |Horse       |            |            |            |            |            |
+|4           |1           |Toby        |Turtle      |            |            |            |            |            |
+|5           |3           |Ginger      |Dog         |            |            |            |            |            |
+|6           |3           |Miss Kitty  |Cat         |            |            |            |            |            |
+|7           |3           |Bubble      |Fish        |            |            |            |            |            |
 
-Table Name:
+Table Name: Residence
 
-|            |            |            |            |            |            |            |            |            |
+|residence_id|owner_id    |fenced_yard |city_dweller|            |            |            |            |            |
 |------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
+|1           |1           |No          |Yes         |            |            |            |            |            |
+|3           |2           |No          |No          |            |            |            |            |            |
+|2           |3           |Yes         |No          |            |            |            |            |            |
 |            |            |            |            |            |            |            |            |            |
 |            |            |            |            |            |            |            |            |            |
 |            |            |            |            |            |            |            |            |            |
 
-Table Name:
-
-|            |            |            |            |            |            |            |            |            |
-|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
 
 ---
 
@@ -279,6 +265,8 @@ Table Name:
 * [ ] ***delete all customers that have no orders. Should delete 2 (or 3 if you haven't deleted the record added) records***
 
 ```SQL
+
+
 
 ```
 
